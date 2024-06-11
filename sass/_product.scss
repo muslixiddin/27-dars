@@ -1,0 +1,93 @@
+.product-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(34, 52, 61);
+    padding: 24px 0 68px 0;
+
+    .product-section-wrapper {
+
+        .product-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(255, 255, 255);
+            font-size: 34px;
+            text-align: center;
+            font-weight: 700;
+            line-height: 51px;
+            margin-bottom: 50px;
+        }
+
+        .product-cards {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+
+            .product-card {
+                box-sizing: border-box;
+                border: 1px solid rgb(222, 222, 222);
+                border-radius: 10px;
+                width: 350px;
+                background-color: transparent;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 32px 37px;
+
+                .product-circle {
+                    width: 50px;
+                    height: 50px;
+                    margin-bottom: 32px;
+                    border-radius: 19px;
+                    background: rgb(2, 137, 122);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .second {
+                    background-color: rgb(77, 141, 255);
+                }
+
+                .third {
+                    background-color: rgb(240, 62, 61);
+                }
+
+                .product-card-title {
+                    text-align: center;
+                    color: rgb(255, 255, 255);
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 33px;
+                    letter-spacing: 0.1px;
+                    margin-bottom: 16px;
+                }
+
+                .product-card-text {
+                    width: 90%;
+                    color: rgb(255, 255, 255);
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 27px;
+                    letter-spacing: 0.2px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:800px) {
+    .product-section {
+        .product-section-wrapper {
+            .product-cards {
+                .product-card {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
